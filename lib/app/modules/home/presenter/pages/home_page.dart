@@ -84,7 +84,7 @@ class _HomePageState extends State<HomePage> {
                         fontWeight: FontWeight.w400),
                   ),
                   TextSpan(
-                      text: 'Checkmob.',
+                      text: 'Usuário.',
                       style: TextStyle(
                           fontSize: 20,
                           color: Colors.white,
