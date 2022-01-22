@@ -51,8 +51,7 @@ class _AnswerFormState extends State<AnswerForm> {
         bottomNavigationBar: changeWidget
             ? Padding(
                 padding: const EdgeInsets.only(left: 10, right: 10),
-                child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(primary: colorRgboBlue),
+                child: TextButton(
                     onPressed: () {
                       Modular.to.pop();
                     },
@@ -181,6 +180,7 @@ class _AnswerFormState extends State<AnswerForm> {
                                           ['questionario']['titulo'],
                                       textDescription: widget.receveidAnswers
                                           .answer[index]['descricao'],
+                                      // ignore: prefer_if_null_operators
                                       textAnswer: answerList[index] == null
                                           ? ''
                                           : answerList[index],
